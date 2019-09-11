@@ -68,7 +68,6 @@ private fun Array<Int>.insertionSort(): Array<Int> {
             indexIn--
         }
     }
-
     return this
 }
 
