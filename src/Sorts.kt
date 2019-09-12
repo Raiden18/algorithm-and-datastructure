@@ -57,13 +57,15 @@ private fun Array<Int>.selectionSort(): Array<Int> {
     }
     return this
 }
+
 //If arraySort starts in decrease order it needs to swap O(N^2) swaps and comparisons
 private fun Array<Int>.insertionSort(): Array<Int> {
     for (indexOut in 1 until size) {
         var indexIn = indexOut
+        println(indexOut)
         while (indexIn > 0 && this[indexIn - 1] > this[indexIn]) {
-            val temp = this[indexIn-1]
-            this[indexIn-1] = this[indexIn]
+            val temp = this[indexIn - 1]
+            this[indexIn - 1] = this[indexIn]
             this[indexIn] = temp
             indexIn--
         }
