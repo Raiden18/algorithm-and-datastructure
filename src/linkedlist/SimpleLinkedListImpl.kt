@@ -15,6 +15,8 @@ private fun main() {
     }
 }
 
+//It gets O(1) time to get first item and O(N) to get random item just like in arrays.
+// But it's faster than arrays because it isn't needed any shifts
 class SimpleLinkedListImpl(firstItem: Int) : SimpleLinkedList {
     private var firstINode: Node
 

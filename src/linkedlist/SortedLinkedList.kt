@@ -20,6 +20,7 @@ fun main() {
     }
 }
 
+//O(1) to take first item and O(N) to insert items
 class SortedLinkedList(firstValue: Int) : SimpleLinkedList {
     private var firstItem: Node
     private var currentInsertedNode: Node? = null
