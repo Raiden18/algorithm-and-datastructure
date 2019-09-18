@@ -64,7 +64,6 @@ class DoubleLinkedListImpl : DoubleLinkedList {
         return firstNode!!
     }
 
-
     override fun getLast(): NodeDoubleEnded {
         return lastNode!!
     }
