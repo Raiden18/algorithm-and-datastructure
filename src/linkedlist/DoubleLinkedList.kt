@@ -24,7 +24,6 @@ fun main() {
 interface DoubleLinkedList {
     fun insertFirst(value: Int)
     fun insertLast(value: Int)
-    fun delete(value: Int)
     fun getFirst(): NodeDoubleEnded
     fun getLast(): NodeDoubleEnded
 }
@@ -65,9 +64,6 @@ class DoubleLinkedListImpl : DoubleLinkedList {
         return firstNode!!
     }
 
-    override fun delete(value: Int) {
-
-    }
 
     override fun getLast(): NodeDoubleEnded {
         return lastNode!!
